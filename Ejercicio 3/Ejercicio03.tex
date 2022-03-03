@@ -88,7 +88,7 @@
                         $\left(\frac{3}{m}\right) = -\left(\frac{m}{3}\right) = -\left(\frac{1}{3}\right) = -1$.
         \item[$\bullet$] $\left(\frac{5}{m}\right)$. Procedemos como en el anterior. Teniendo $m \equiv 3 \pmod{4}$ obtenemos
                         $\left(\frac{5}{m}\right) = -\left(\frac{m}{5}\right)$. Ahora vemos que $m \equiv 1 \pmod{5}$, luego tenemos 
-                        $\left(\frac{5}{m}\right) = -\left(\frac{m}{5}\right) = -\left(\frac{1}{5}\right) = -1$.
+                        $\left(\frac{5}{m}\right) = -\left(\frac{m}{5}\right) = \left(\frac{1}{5}\right) = 1$.
         \item[$\bullet$] $\left(\frac{7}{m}\right)$. Procedemos como en el anterior. Teniendo $m \equiv 3 \pmod{4}$ obtenemos
                         $\left(\frac{7}{m}\right) = -\left(\frac{m}{7}\right)$. Ahora vemos que $m \equiv 1 \pmod{7}$, luego tenemos 
                         $\left(\frac{7}{m}\right) = -\left(\frac{m}{7}\right) = -\left(\frac{1}{7}\right) = -1$.
@@ -101,14 +101,14 @@
     \begin{enumerate}
         \item[$\bullet$] $\left(\frac{2}{m}\right) = 1 \equiv 2^{(m-1)/2} \pmod{m} \Rightarrow a = 2 $ cumple el test de Euler.
         \item[$\bullet$] $\left(\frac{3}{m}\right) = -1 \equiv 3^{(m-1)/2} \pmod{m} \Rightarrow a = 3 $ cumple el test de Euler.
-        \item[$\bullet$] $\left(\frac{5}{m}\right) = -1 \neq 1 = 5^{(m-1)/2} \pmod{m} \Rightarrow a = 5 $ no cumple el test de Euler.
+        \item[$\bullet$] $\left(\frac{5}{m}\right) = 1 \equiv 5^{(m-1)/2} \pmod{m} \Rightarrow a = 5 $ cumple el test de Euler.
         \item[$\bullet$] $\left(\frac{7}{m}\right) = -1 \equiv 7^{(m-1)/2} \pmod{m} \Rightarrow a = 7 $ cumple el test de Euler.
         \item[$\bullet$] $\left(\frac{11}{m}\right) = -1 \equiv 11^{(m-1)/2} \pmod{m} \Rightarrow a = 11 $ cumple el test de Euler.
     \end{enumerate}
 
     Donde el valor de $a^{(m-1)/2} \pmod{m}$ lo hemos calculado con la penúltima iteración del algoritmo de exponenciación rápida para cada base.
-    Con lo que tenemos que $m$ es un posible primo de Euler para las bases 2, 3, 7 y 11, pero no para la base 5.
-    Con ello podemos concluir que nuestro número $m$ ha pasado el test de Solovay-Strassen para las bases 2, 3, 7 y 11.
+    Con lo que tenemos que $m$ es un posible primo de Euler para las bases 2, 3, 5, 7 y 11, y por tanto nuestro número $m$ ha pasado el test de 
+    Solovay-Strassen para estas cinco bases.
 
 
 
