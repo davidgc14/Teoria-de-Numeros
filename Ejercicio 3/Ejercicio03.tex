@@ -42,7 +42,7 @@
 
 \begin{document}
     \begin{center}
-        \LARGE{\textbf{Ejercicio 2}} \\
+        \LARGE{\textbf{Ejercicio 3}} \\
         \Large{David García Curbelo} \\
     \end{center}
 
@@ -114,11 +114,39 @@
 
     \newpage
     \textbf{Apartado III. \textit{Calcula el test de Miller-Rabin para esas 5 bases.}}
+    Calculemos la a-sucesión para cada base. Vemos primero que $m-1 = 2 \cdot 2115329543396028934802646178395$, luego nuestra
+    a-sucesión tendrá sólo dos términos. Nos debemos fijar entonces en los dos últimos términos del algoritmo de exponenciación 
+    rápida para cada base.\\
 
+    \begin{enumerate}
+        \item[$\bullet$] Veamos para la base 2.\\
+                        $2^{(m-1)} \equiv 1 \pmod{m}$\\
+                        $2^{(m-1)/2} \equiv 1 \pmod{m}$\\
+        \item[$\bullet$] Veamos para la base 3.\\
+                        $3^{(m-1)} \equiv 1 \pmod{m}$\\
+                        $3^{(m-1)/2} \equiv -1 \pmod{m}$\\
+        \item[$\bullet$] Veamos para la base 5.\\
+                        $5^{(m-1)} \equiv 1 \pmod{m}$\\
+                        $5^{(m-1)/2} \equiv 1 \pmod{m}$\\         
+        \item[$\bullet$] Veamos para la base 7.\\
+                        $7^{(m-1)} \equiv 1 \pmod{m}$\\
+                        $7^{(m-1)/2} \equiv -1 \pmod{m}$\\   
+        \item[$\bullet$] Veamos para la base 11.\\
+                        $11^{(m-1)} \equiv 1 \pmod{m}$\\
+                        $11^{(m-1)/2} \equiv -1 \pmod{m}$\\  
+    \end{enumerate}
+
+    Podemos observar que cada a-sucesión acaba en 1 y que todo 1 va precedido de un 1 o de un -1. Por lo tanto, podemos afirmar
+    que nuestro número $m$ ha pasado el test de Miller-Rabin para las bases 2, 3, 5, 7 y 11, y por tanto podemos decir que se trata
+    de un pseudoprimo fuerte para dichas bases. Con esto además podemos afirmar que la probabilidad de que nuestro número $m$ sea 
+    compuesto es de $2^{-5} = 0.0009765625$.
 
     \newpage
     \textbf{Apartado IV. \textit{¿Qué deduces sobre la primalidad de tu número?}}
-
+    Hemos visto que nuestro número ha pasado el test de Solovay-Strassen para las 5 bases, al igual que el test de Miller-Rabin.
+    Como acabamos de ver, la probabilidad de que $m$ sea compuesto es muy baja, y por consiguiente la probabilidad de que $m$ sea
+    primo es considerablemente alta. Por tanto, podemos afirmar casi con seguridad de que $m$ es un número primo. Para poder afirmarlo
+    con total seguridad faltaría aplicarle algún test para obtener un certificado de primalidad.
 
     \newpage
     \textbf{\Large{ANEXO}} \\
