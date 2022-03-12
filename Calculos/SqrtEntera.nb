@@ -1,0 +1,136 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4981,        126]
+NotebookOptionsPosition[      4163,        107]
+NotebookOutlinePosition[      4558,        123]
+CellTagsIndexPosition[      4515,        120]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["Parte entera de Ra\[IAcute]z cuadrada", "Title"]], \
+"Text",
+ CellChangeTimes->{{3.8560754755938177`*^9, 
+  3.856075499192966*^9}},ExpressionUUID->"896d9cc7-e3cd-48e4-acc9-\
+4882505e7de7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SqrtEntera", "[", "numero_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"n", "=", "numero"}], ",", 
+      RowBox[{"a", "=", "numero"}], ",", 
+      RowBox[{"aux", "=", "0"}], ",", 
+      RowBox[{"cociente", "=", "0"}], ",", 
+      RowBox[{"i", "=", "1"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"EvenQ", "[", "n", "]"}], ",", 
+       RowBox[{"cociente", "=", 
+        RowBox[{"n", "/", "2"}]}], ",", 
+       RowBox[{"cociente", "=", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"n", "+", "1"}], ")"}], "/", "2"}]}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{"cociente", "<", "a"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"a", "=", "cociente"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"aux", "=", 
+         RowBox[{
+          RowBox[{"a", "^", "2"}], "+", "n"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"cociente", "=", 
+         RowBox[{"Quotient", "[", 
+          RowBox[{"aux", ",", 
+           RowBox[{"2", "*", "a"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"\"\<paso = \>\"", "<>", 
+            RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<, a = \>\"", "<>", 
+            RowBox[{"ToString", "[", "a", "]"}], "<>", "\"\<, a\.b2+n = \>\"",
+             "<>", 
+            RowBox[{"ToString", "[", "aux", "]"}], "<>", 
+            "\"\<, cociente = \>\"", "<>", 
+            RowBox[{"ToString", "[", "cociente", "]"}]}], ",", "16"}], "]"}], 
+         "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"i", "++"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", "a", "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856072214471581*^9, 3.8560722209276533`*^9}, {
+  3.856072311916291*^9, 3.856072313263501*^9}, {3.856072346331335*^9, 
+  3.856072461255452*^9}, {3.856072523515053*^9, 3.856072577953401*^9}, {
+  3.85607383241485*^9, 3.856073881603483*^9}, {3.8560739366746683`*^9, 
+  3.856074029460752*^9}, {3.856074081092861*^9, 3.856074090187448*^9}, {
+  3.856074134027115*^9, 3.85607416455777*^9}, {3.856074265282649*^9, 
+  3.85607427946015*^9}, {3.856074334642295*^9, 3.856074380971283*^9}, {
+  3.856074434240829*^9, 3.856074531360652*^9}, {3.856074817879867*^9, 
+  3.85607493896562*^9}, {3.856074969184249*^9, 3.856075161991295*^9}, {
+  3.856075227656575*^9, 3.856075248090412*^9}, {3.856075278586636*^9, 
+  3.856075423694525*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"011432f3-641d-4109-be4a-be7380ac27cb"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8560751699747353`*^9, 3.856075176048004*^9}, 
+   3.856075437436401*^9},ExpressionUUID->"85953f5b-c4ab-4102-9b21-\
+8b80a88480cd"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8560740390382442`*^9, 3.8560740447905483`*^9}, 
+   3.856074145291589*^9},ExpressionUUID->"71ce1fd6-2fe3-4e52-a5a3-\
+047ace398d7d"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.856074994853672*^9, 3.8560750051808243`*^9}, 
+   3.856075446995706*^9},ExpressionUUID->"c1ec8d65-33ce-45af-ab3a-\
+e6508105afaf"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8560754429007463`*^9, 
+  3.856075442906788*^9}},ExpressionUUID->"fd9b26ef-0b4c-4c51-be39-\
+7ff2da579562"]
+},
+WindowSize->{630., 739.5},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"13.0 para Linux x86 (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"33f98669-4e42-403b-824e-1b868ba9cf4c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 212, 4, 135, "Text",ExpressionUUID->"896d9cc7-e3cd-48e4-acc9-4882505e7de7"],
+Cell[773, 26, 2687, 59, 395, "Input",ExpressionUUID->"011432f3-641d-4109-be4a-be7380ac27cb"],
+Cell[3463, 87, 177, 3, 29, "Input",ExpressionUUID->"85953f5b-c4ab-4102-9b21-8b80a88480cd"],
+Cell[3643, 92, 179, 3, 29, "Input",ExpressionUUID->"71ce1fd6-2fe3-4e52-a5a3-047ace398d7d"],
+Cell[3825, 97, 177, 3, 29, "Input",ExpressionUUID->"c1ec8d65-33ce-45af-ab3a-e6508105afaf"],
+Cell[4005, 102, 154, 3, 29, InheritFromParent,ExpressionUUID->"fd9b26ef-0b4c-4c51-be39-7ff2da579562"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
