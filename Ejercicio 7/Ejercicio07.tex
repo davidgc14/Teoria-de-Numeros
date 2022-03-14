@@ -1,0 +1,71 @@
+\documentclass[fleqn]{article}
+
+%\pgfplotsset{compat=1.17}
+
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{dsfont} %Numeros reales, naturales...
+\usepackage{cancel}
+\usepackage{babel}
+
+%\graphicspath{{images, }}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+
+%Estructura de ecuaciones
+\setlength{\textwidth}{15cm} \setlength{\oddsidemargin}{5mm}
+\setlength{\textheight}{23cm} \setlength{\topmargin}{-1cm}
+
+
+
+\author{David García Curbelo}
+\title{Teoría de Números y Criptografía}
+
+\pagestyle{empty}
+
+
+\def\R{\mathds{R}}
+\def\Z{\mathds{Z}}
+\def\N{\mathds{N}}
+\def\Q{\mathds{Q}}
+
+\def\sup{$^2$}
+
+\def\next{\quad \Rightarrow \quad}
+
+
+\begin{document}
+    \begin{center}
+        \LARGE{\textbf{Ejercicio 7}} \\
+        \Large{David García Curbelo} \\
+    \end{center}
+
+    \vspace{1cm}
+    Toma tu número $n=4230659086792057869605292356791$ de la lista publicada para el ejercicio 3. Sea $d$ el 
+    primer elemento de la sucesión $5, -7, 9, -11, 13, \dots$ que satisface que el símbolo de Jacobi es $(d|n) = -1$.
+
+
+    \textbf{Apartado I. \textit{Con $P=1$, $Q = (1-n)/4$, define el e.c. $\alpha$ y sus sucesiones de Lucas asociadas.}} 
+
+
+    \newpage
+    \textbf{Apartado II. \textit{Si $n$ primo, ¿Qué debería pasarle a $V_r$, $U_r$, módulo $n$? ¿Y a $V_{r/2}$, $U_{r/2}$?
+            Calcula los términos $V_r$, $U_r$, $V_{r/2}$, $U_{r/2}$ módulo $n$, de las sucesiones de Lucas.
+            ¿Tu $n$ verifica el TPF para el entero cuadrático $\alpha$?}}
+
+    
+    \newpage
+    \textbf{Apartado III. \textit{Factoriza $r = n+1$ y para cada factor primo $p$ suyo, calcula $U_{r/p}$.
+            ¿Cuál es el rango de Lucas $w(n)$? ¿Qué deduces sobre la primalidad de tu $n$?}}
+            
+
+
+
+\end{document}
