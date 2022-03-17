@@ -2,12 +2,14 @@
 n = 34539388448652514879742656254743
 P = 1
 Q = -1
+jacobi = - 1
 
 # Datos de las iteraciones:
+r = n - jacobi
 k = 0
 U1 = 0
 U2 = 1
-binary = bin(n+1)[2:]
+binary = bin(r)[2:]
 
 m = 0
 print("m", "k", "U1", "U2")
@@ -27,4 +29,19 @@ for i in binary:
     m += 1
     print(m, k, U1, U2)
 
+V = 2 * U2 - P * U1
 
+print(V)
+
+x = V % n
+if x > n/2:
+    x = x - n
+
+if U1 == 0:
+    if 2*Q == x and jacobi == -1:
+        print("PRIMO")
+    elif 2*Q == x and jacobi == 1:
+        print("PRIMO")
+    else:
+        print("COMPUESTO")
+    
