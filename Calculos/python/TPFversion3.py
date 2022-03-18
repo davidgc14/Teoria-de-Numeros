@@ -30,7 +30,7 @@ for i in binary:
     U2 = aux[1] % n
 
     m += 1
-    print(m, k, U1, U2)
+    print(m,"&", k,"&", U1,"&", U2,"\\")
 
 
 # Certificación de primalidad:
