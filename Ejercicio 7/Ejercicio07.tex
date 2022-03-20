@@ -103,8 +103,8 @@
             &V_{k/2} = \sqrt{V_{k} + 2Q^{k/2}} \\
         \end{aligned}
     \right.$\\
-    A las que aplicando restricción módulo $n$ obtenemos  $V_{r/2} \cdot U_{r/2} = U_{r} \equiv 0 \pmod{n}$, con lo que tenemos que, o bien alguno 
-    de $U_{r/2}$ o $V_{r/2}$ es 0, o bien el producto es múltiplo de $n$.
+    A las que aplicando restricción módulo $n$ obtenemos  $V_{r/2} \cdot U_{r/2} = U_{r} \equiv 0 \pmod{n}$, con lo que tenemos que $U_{r/2} \equiv 0 \pmod{n}$ 
+    y por las fórmulas vistas $V_n \equiv -6 \pmod{n}$. Estas deducciones se pueden comprobar en la tabla de iteraciones de la página siguiente.
     
     Ahora calculamos $Q^{r/2}$, para el que usamos el algoritmo de la exponenciación rápida, donde $r/2 = 2115329543396028934802646178396$ (par), luego
     $(-3)^{\frac{r}{2}} = 3^{\frac{r}{2} } \equiv -3 \pmod{n}$. Además, por el punto anterior tenemos que $V_{n+1} \equiv -6 \pmod{n}$, luego tenemos
@@ -330,11 +330,14 @@
     Calculemos a continuación $U_{r/p}$ para cada $p$ en la lista anterior:
     \begin{enumerate}
         \item[-] $U_{r/8} = U_ {528832385849007233700661544599} = 762432504487272216321147199828$ % Cogido de la tabla
-        \item[-] $U_{r/4349} = U_ {972788936949197026811978008}$
-        \item[-] $U_{r/62347} = U_ {67856658488653148822000936}$
-        \item[-] $U_{r/1924630699} = U_ {2198166686726042848808}$
-        \item[-] $U_{r/1013364453467} = U_ {4174864307029719976}$
+        \item[-] $U_{r/4349} = U_ {972788936949197026811978008} = $
+        \item[-] $U_{r/62347} = U_ {67856658488653148822000936} = $
+        \item[-] $U_{r/1924630699} = U_ {2198166686726042848808} = $
+        \item[-] $U_{r/1013364453467} = U_ {4174864307029719976} = $
     \end{enumerate}
+
+    Finalmente, como vimos anteriormente, tenemos que $U_{r/2} /equiv 0$, lo que nos asegura que el rango de Lucas $\omega(n) \neq n+1$, por lo
+    que concluimos que para los valores de $Q$ y $P$ dados, no podemos asegurar la primalidad de nuestro número $n$.
 
 
 \end{document}
