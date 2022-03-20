@@ -1,11 +1,47 @@
+from math import sqrt
+
+
+def jacobi(a,n):
+ 
+    ans = 0
+    residuo = 0
+ 
+    if a == 0:
+        if n == 1:
+            ans = 1
+        else:
+            ans = 0
+    elif a == 2:
+        residuo = n%8
+        if residuo == 7 or residuo == 1:
+            ans = 1
+        if residuo == 5 or residuo == 3:
+            ans = -1
+ 
+    elif a >= n:
+        ans = jacobi(a%n, n)
+    elif a%2 == 0:
+        ans = jacobi(2,n)*jacobi(a/2,n)
+    else:
+        if a%4 == 3 and n%4 == 3:
+            ans = -jacobi(n,a)
+        else:
+            ans = jacobi(n,a)
+ 
+    return ans
+
+###########################################################
+###########################################################
+###########################################################
 # Valores a introducir por el usuario:
-n = 4230659086792057869605292356791
+n = 191871308917122834687961459636870046909
 P = 1
-Q = -3
-jacobi = - 1
+Q = 4
+delta = (P + sqrt(P**2 + 4*Q))/2
+jac = jacobi(delta,n)
 
 # Datos de las iteraciones:
-r = n - jacobi
+r = n - jac
 k = 0
 U1 = 0
 U2 = 1
@@ -15,7 +51,6 @@ binary = bin(r)[2:]
 m = 0
 print("m", "k", "U1", "U2")
 print(m, k, U1, U2)
-
 
 # Ciclo de iteraciones:
 for i in binary: 
@@ -42,9 +77,9 @@ if x > n/2:
     x = x - n
 
 if U1 == 0:
-    if 2*Q == x and jacobi == -1:
+    if 2*Q == x and jac == -1:
         print("PRIMO")
-    elif 2*Q == x and jacobi == 1:
+    elif 2*Q == x and jac == 1:
         print("PRIMO")
     else: 
         print("COMPUESTO")
