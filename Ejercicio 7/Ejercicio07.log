@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  20 MAR 2022 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  21 MAR 2022 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -554,15 +554,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--284
 AED: lastpage setting LastPage
 [8] (/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicio 7/Ejercicio07.aux) ) 
 Here is how much of TeX's memory you used:
- 26201 strings out of 481239
- 641242 string characters out of 5920377
+ 26205 strings out of 481239
+ 641274 string characters out of 5920377
  1054984 words of memory out of 5000000
  41002 multiletter control sequences out of 15000+600000
- 537125 words of font info for 57 fonts, out of 8000000 for 9000
+ 537227 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,98p,785b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicio 7/Ejercicio07.pdf" (8 pages, 158685 bytes).
+Output written on "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicio 7/Ejercicio07.pdf" (8 pages, 157701 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
