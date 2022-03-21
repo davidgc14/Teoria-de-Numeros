@@ -1,6 +1,5 @@
 from math import sqrt
 
-
 def jacobi(a,n):
  
     ans = 0
@@ -34,15 +33,15 @@ def jacobi(a,n):
 ###########################################################
 ###########################################################
 # Valores a introducir por el usuario:
-n = 740580514804901
+n = 2647849547930825548751933021224632491399
 P = 1
-Q = 31
+Q = 58
 # delta = (P + sqrt(P**2 - 4*Q))/2
 delta = P**2 - 4*Q
-jac = jacobi(delta,n)
-
-# Datos de las iteraciones:
-r = n + 1
+# jac = jacobi(delta,n)
+jac = -1
+# Datos de las iteraciones: 2 3 5 7 11 125263161782269243 457538832345169229
+r = (n - jac) 
 k = 0
 U1 = 0
 U2 = 1
@@ -50,8 +49,8 @@ binary = bin(r)[2:]
 
 # inicialización de la impresión:
 m = 0
-print("m", "k", "U1", "U2")
-print(m, k, U1, U2)
+#print("m", "k", "U1", "U2")
+#print(m, k, U1, U2)
 
 # Ciclo de iteraciones:
 for i in binary: 
@@ -66,12 +65,14 @@ for i in binary:
     U2 = aux[1] % n
 
     m += 1
-    print(m,"&", k,"&", U1,"&", U2,"\\")
+    # print(m,"&", k,"&", U1,"&", U2,"\\")
 
 
 # Certificación de primalidad:
 V = 2 * U2 - P * U1
-print("V = ",V)
+# print("V = ",V)
+
+print("Uk = ", U1)
 
 x = V % n
 if x > n/2:
@@ -84,4 +85,3 @@ if U1 == 0:
         print("PRIMO")
     else: 
         print("COMPUESTO")
-    
