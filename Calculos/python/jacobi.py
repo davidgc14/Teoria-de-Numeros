@@ -1,3 +1,5 @@
+from math import sqrt
+
 def jacobi(a,n):
  
     ans = 0
@@ -26,3 +28,11 @@ def jacobi(a,n):
             ans = jacobi(n,a)
  
     return ans
+
+n = 4230659086792057869605292356791
+P = 1
+Q = -3
+delta =pow(P,2) - 4*Q
+jac = jacobi(delta,n)
+
+print(delta**2,jac)

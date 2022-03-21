@@ -34,14 +34,15 @@ def jacobi(a,n):
 ###########################################################
 ###########################################################
 # Valores a introducir por el usuario:
-n = 191871308917122834687961459636870046909
+n = 740580514804901
 P = 1
-Q = 4
-delta = (P + sqrt(P**2 + 4*Q))/2
+Q = 31
+# delta = (P + sqrt(P**2 - 4*Q))/2
+delta = P**2 - 4*Q
 jac = jacobi(delta,n)
 
 # Datos de las iteraciones:
-r = n - jac
+r = n + 1
 k = 0
 U1 = 0
 U2 = 1
