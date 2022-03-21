@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  20 MAR 2022 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  21 MAR 2022 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,12 +555,7 @@ Overfull \hbox (4.86295pt too wide) in paragraph at lines 369--371
 \OT1/cmr/m/n/10 (-20) certificado de primalidad. Ahora tenemos factorizado en primos $\OML/cmm/m/it/10 m[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (-20) 1 = 2[] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (-20) 598248833880247938013$,
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
-
- []
-
-
+[8] 
 AED: lastpage setting LastPage
 [9] (/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicio 8/Ejercicio08.aux) ) 
 Here is how much of TeX's memory you used:
@@ -572,7 +567,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  68i,8n,98p,785b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicio 8/Ejercicio08.pdf" (9 pages, 153466 bytes).
+Output written on "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicio 8/Ejercicio08.pdf" (9 pages, 154701 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
