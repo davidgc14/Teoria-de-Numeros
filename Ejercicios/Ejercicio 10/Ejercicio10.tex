@@ -1,0 +1,70 @@
+\documentclass[fleqn]{article}
+
+%\pgfplotsset{compat=1.17}
+
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{dsfont} %Numeros reales, naturales...
+\usepackage{cancel}
+\usepackage{babel}
+
+%\graphicspath{{images, }}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+
+%Estructura de ecuaciones
+\setlength{\textwidth}{15cm} \setlength{\oddsidemargin}{5mm}
+\setlength{\textheight}{23cm} \setlength{\topmargin}{-1cm}
+
+
+
+\author{David García Curbelo}
+\title{Teoría de Números y Criptografía}
+
+\pagestyle{empty}
+
+
+\def\R{\mathds{R}}
+\def\Z{\mathds{Z}}
+\def\N{\mathds{N}}
+\def\Q{\mathds{Q}}
+
+\def\sup{$^2$}
+
+\def\next{\quad \Rightarrow \quad}
+
+
+\begin{document}
+    \begin{center}
+        \LARGE{\textbf{Ejercicio 8}} \\
+        \Large{David García Curbelo} \\
+    \end{center}
+
+    \vspace{1cm}
+    Toma tu número $p = 45352609$ de la lista publicada para este ejercicio.
+
+    \textbf{Apartado I. \textit{Calcula el símbolo de Jacobi $\left(\frac{-11}{p}\right)$. Si sale 1, usa el algoritmo de 
+                                Tonelli-Shanks para hallar soluciones a la congruencia $x^2 \equiv -1 \pmod{p}$.}}\\
+    
+
+    \newpage
+    \textbf{Apartado II. \textit{Usa una de estas soluciones para factorizar el ideal principal, 
+                                $(p) = (p, n+ \sqrt{-11})(p, n+ \sqrt{-11}) como producto de dos ideales.$}}\\
+
+    \newpage
+    \textbf{Apartado III. \textit{Aplica el algoritmo de Conachia-Smith modificando a $2p$ y $n$ para encontrar
+                                una solución a la ecuación diofántica $4p = x^2 + 11y^2 $ y la usas para encontrar 
+                                una factorización de $p$ en a.e. del cuerpo $\Q[\sqrt{p}]$.}} \\
+
+
+    \newpage
+    \textbf{Apartado IV. \textit{¿Son principales sus ideales $(p, n+ \sqrt{-11})$ y $(p, n+ \sqrt{-11})$ ?}}\\
+
+\end{document}
