@@ -1,0 +1,79 @@
+\documentclass[fleqn]{article}
+
+%\pgfplotsset{compat=1.17}
+
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{dsfont} %Numeros reales, naturales...
+\usepackage{cancel}
+\usepackage{babel}
+
+%\graphicspath{{images, }}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+
+%Estructura de ecuaciones
+\setlength{\textwidth}{15cm} \setlength{\oddsidemargin}{5mm}
+\setlength{\textheight}{23cm} \setlength{\topmargin}{-1cm}
+
+
+
+\author{David García Curbelo}
+\title{Teoría de Números y Criptografía}
+
+\pagestyle{empty}
+
+
+\def\R{\mathds{R}}
+\def\Z{\mathds{Z}}
+\def\N{\mathds{N}}
+\def\Q{\mathds{Q}}
+
+\def\sup{$^2$}
+
+\def\next{\quad \Rightarrow \quad}
+
+
+\begin{document}
+    \begin{center}
+        \LARGE{\textbf{Ejercicio 8}} \\
+        \Large{David García Curbelo} \\
+    \end{center}
+
+    \vspace{1cm}
+
+    \textbf{Preámbulo} \\
+    Toma tu número $n=191871308917122834687961459636870046909$ de la lista publicada para el ejercicio 2.
+    Escribe n en base 2, usa esas cifras para definir un polinomio, $f(x)$, donde tu bit más significativo
+    defina el grado del polinomio $n$, el siguiente bit va multiplicado por $x^{n-1}$ y sucesivamente hasta 
+    que el bit menos significativo sea el término independiente. El polinomio que obtienes es universal en el
+    sentido de que tiene coeficientes en cualquier anillo.
+
+    \newpage
+    Sea $f(x)$ el polinomio que obtienes con coeficientes en $\Z$.\\ 
+
+    \textbf{Apartado I. \textit{Toma $g(x) = f(x) \pmod{2}$ y haya el menor cuerpo de característica 2 que contenga
+                                a todas las raíces de $g$. ¿Qué deduces sobre la irreducibilidad de $g(x)$ en $\Z_2[x]$ ?}}\\
+    
+
+    \newpage
+    \textbf{Apartado II. \textit{Extrae la parte libre de cuadrados de $g(x)$ y le calculas su matriz de Berlekamp por
+                                columnas. Resuelve el s.l. $(B - Id)X = 0$.}}\\
+
+    \newpage
+    \textbf{Apartado III. \textit{Aplica Berlekamp si es necesario recursivamente para hallar la descomposición en irreducibles de $g(x)$ en $\Z_2[x]$.}} \\
+
+
+    \newpage
+    \textbf{Apartado IV. \textit{Haz lo mismo para hallar la descomposición en irreducibles de $f(x) \pmod{3}$}}\\
+    \newpage
+    \textbf{Apartado V. \textit{¿Qué deduces sobre la reducibilidad de $f(x)$ en $\Z[x]$?}}\\
+
+\end{document}
