@@ -53,6 +53,48 @@
     \textbf{Apartado I. \textit{Calcula el símbolo de Jacobi $\left(\frac{-11}{p}\right)$. Si sale 1, usa el algoritmo de 
                                 Tonelli-Shanks para hallar soluciones a la congruencia $x^2 \equiv -1 \pmod{p}$.}}\\
     
+    Calculamos el símbolo de Jacobi: 
+    $$\left(\frac{-11}{p}\right) = \left(\frac{-1}{p}\right) \left(\frac{-11}{p}\right) = \left(\frac{p}{11}\right) 
+    = \left(\frac{5}{11}\right) = 1$$
+    Procedemos a calcular las soluciones de la ecuación $x^2 \equiv -1 \pmod{p}$ mediante el algoritmo de Tonelli-Shanks.
+    Para ello primero necesitamos estudiar la primalidad del número $p = 45352609$, para el que trataremos de encontrar un
+    elemento primitivo. Vemos primeramente que $p$ pasa el test de Fermat para las bases $a = 2,3,5,7,11$, cumpliendo
+    $a^{p-1} \equiv a \pmod{p}$, por lo que tenemos altas probabilidades de primalidad. Procedemos a buscar mediante el algoritmo
+    de Lucas-Lehmer un elemento primitivo de $p$. Para ello primero factorizamos $p - 1 = 2^5 \cdot 3 \cdot 7 \cdot 67489$.
+    
+    Veamos si $p_1 = 67489$ es primo. Dicho número pasa el test de Fermat para las bases $a = 2,3,5,7,11$, cumpliendo
+    $a^{p_1-1} \equiv a \pmod{p_1}$, por lo que tenemos altas probabilidades de primalidad. Factorizamos por tanto $p_1 - 1 $
+    para poder aplicar el algoritmo de Lucas-Lehmer para $p_1$, con lo que obtenemos que $p_1 - 1 = 2^5 \cdot 3 \cdot 703$.
+    Vemos que 703 no se encuentra en la lista de primos, luego aplicando el algoritmo $\rho$ de Polard obtenemos una factorización 
+    completa de  $p_1 - 1 = 2^5 \cdot 3 \cdot 19 \cdot 37$. Por tanto estamos en condiciones de buscar un elemento primitivo para 
+    $p_1$: 
+
+    \begin{itemize}
+        \item $23^{(p_1 - 1)} \equiv 1 \pmod{p_1}$
+        \item $23^{(p_1 - 1)/2} \not\equiv 1 \pmod{p_1}$    
+        \item $23^{(p_1 - 1)/3} \not\equiv 1 \pmod{p_1}$
+        \item $23^{(p_1 - 1)/19} \not\equiv 1 \pmod{p_1}$
+        \item $23^{(p_1 - 1)/37} \not\equiv 1 \pmod{p_1}$
+    \end{itemize}
+
+    Con lo que hemos encontrado un elemento primitivo, y por tanto tenemos certificado de primalidad de $p_1 = 67489$.
+    Tenemos factorizado por tanto nuestro número $p-1 = 2^5 \cdot 3 \cdot 5 \cdot 7 \cdot 67489$ en factores primos, y estamos en condiciones de buscar un elemento 
+    primitivo para $p$:
+
+    \begin{itemize}
+        \item $19^{(p - 1)} \equiv 1 \pmod{p}$
+        \item $19^{(p - 1)/2} \not\equiv 1 \pmod{p}$    
+        \item $19^{(p - 1)/3} \not\equiv 1 \pmod{p}$
+        \item $19^{(p - 1)/7} \not\equiv 1 \pmod{p}$
+        \item $19^{(p - 1)/67489} \not\equiv 1 \pmod{p}$
+    \end{itemize}
+
+    Con lo que hemos encontrado un elemento primitivo, y por tanto tenemos certificado de primalidad de $p = 45352609$, como andábamos buscando.
+    
+
+
+
+
 
     \newpage
     \textbf{Apartado II. \textit{Usa una de estas soluciones para factorizar el ideal principal, 
