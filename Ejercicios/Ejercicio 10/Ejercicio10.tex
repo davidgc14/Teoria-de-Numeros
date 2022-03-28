@@ -51,7 +51,7 @@
     Toma tu número $p = 45352609$ de la lista publicada para este ejercicio.
 
     \textbf{Apartado I. \textit{Calcula el símbolo de Jacobi $\left(\frac{-11}{p}\right)$. Si sale 1, usa el algoritmo de 
-                                Tonelli-Shanks para hallar soluciones a la congruencia $x^2 \equiv -1 \pmod{p}$.}}\\
+                                Tonelli-Shanks para hallar soluciones a la congruencia $x^2 \equiv -11 \pmod{p}$.}}\\
     
     Calculamos el símbolo de Jacobi: 
     $$\left(\frac{-11}{p}\right) = \left(\frac{-1}{p}\right) \left(\frac{-11}{p}\right) = \left(\frac{p}{11}\right) 
@@ -91,6 +91,18 @@
 
     Con lo que hemos encontrado un elemento primitivo, y por tanto tenemos certificado de primalidad de $p = 45352609$, como andábamos buscando.
     
+    Además comprobamos que $p \equiv 1 \pmod{8}$, por tanto necesitamos de un algoritmo especial, en nuestro caso del algoritmo de Tonelli-Shanks.
+    Para ello, factorizamos $p = 2^5 \cdot 1417269$, luego tenemos que el algoritmo tendrá a lo sumo 5 pasos.
+
+    Tomamos un número que no sea residuo cuadrático, por lo que para $n=20$ tenemos que $\left(\frac{20}{p}\right) = -1$, luego 20 no es residuo cuadrático.
+    Entonces, un generador del 2-subgrupo de Sylow $ G \cong \Z_{2^5} = \Z_{32}$, viene dado por:
+    \begin{itemize}
+        \item $$z = n^q \equiv 20^{1417269} \equiv 12390911 \pmod{p}$$
+                Ahora, como $t = (-11)^1417269 \equiv 196563 \not\equiv -1 \pmod{p}$, aún no hemos acabado. 
+                % En caso de que fuera 1, tendríamos que una de las soluciones de la congruencia $x^2 \equiv -11 \pmod{p}$ vendrían dadas por $r = (q+1)/2$.
+                Como no es así, tenemos que $O(t)$ es un divisor de $2^{e-1}=16$, luego para $i = 3$ tenemos que
+                $t^{i-1} \equiv -1 \pmod{p} $
+    \end{itemize}
 
 
 

@@ -261,13 +261,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-OUTPUT /home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+OUTPUT /home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
