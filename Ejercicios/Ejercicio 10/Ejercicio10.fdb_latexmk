@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1648495146 "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.tex" "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.pdf" "Ejercicio10" 1648495147
+["pdflatex"] 1648668152 "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.tex" "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.pdf" "Ejercicio10" 1648668153
   "/etc/texmf/web2c/texmf.cnf" 1645912500 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.aux" 1648495146 135 5dea451a1a54b612c96d247a9c5a7eaf ""
-  "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.tex" 1648495146 5703 2f979429f0fae654a800a5f97e2b00fc ""
+  "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.aux" 1648668153 135 5dea451a1a54b612c96d247a9c5a7eaf ""
+  "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.tex" 1648668152 8328 a22719644735e6b48318975cb9e759b9 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -195,11 +195,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645912741 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645912789 8259919 a793c1f5b9ddcd613a0c518ee5a02865 ""
-  "Ejercicio10.aux" 1648495146 135 5dea451a1a54b612c96d247a9c5a7eaf "pdflatex"
-  "Ejercicio10.tex" 1648495146 5703 2f979429f0fae654a800a5f97e2b00fc ""
+  "Ejercicio10.aux" 1648668153 135 5dea451a1a54b612c96d247a9c5a7eaf "pdflatex"
+  "Ejercicio10.tex" 1648668152 8328 a22719644735e6b48318975cb9e759b9 ""
   (generated)
-  "Ejercicio10.aux"
-  "Ejercicio10.log"
   "Ejercicio10.pdf"
+  "Ejercicio10.log"
+  "Ejercicio10.aux"
   "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.pdf"
   "/home/curbelo/Documentos/Teoria-de-Numeros/Ejercicios/Ejercicio 10/Ejercicio10.log"
